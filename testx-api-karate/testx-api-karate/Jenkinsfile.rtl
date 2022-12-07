@@ -1,0 +1,52 @@
+pipeline {
+    options {
+        buildDiscarder(logRotator(numToKeepStr:'30'))
+    }
+
+    agent { label "aurora_slave" }
+
+    stages {
+        stage ('Karate') {
+            steps {
+                script {
+                    def reportDirPath = ""
+                    def reportFileName = ""
+                    def reportTitle = ""
+                    withMaven() {
+                         echo "${Tag}"
+                         if ("${Tag}" == "@nft") {
+                            echo 'performance'
+                            sh "mvn clean test -DskipTests=true gatling:test -s rtl_settings.xml"
+                            def files = findFiles glob: 'target/gatling/**/index.html'
+                            def folder = (files[0].path).split('/index.html')[0]
+                            reportDirPath = "${folder}"
+                            reportFileName = "index.html"
+                            reportTitle = "GatlingReport"
+                            echo "${reportDirPath}"
+                         } else {
+                            reportDirPath = "target/karate-reports"
+                            reportFileName = "karate-summary.html"
+                            reportTitle = "KarateReport"
+                            sh """
+                            mvn clean test -Dkarate.options="--tags ${Tag}" -s rtl_settings.xml -Dmaven.test.failure.ignore=true -D karate.tag=${Tag}
+                            """
+                         }
+                    }
+                    
+                    if ("${Tag}" != "@nft") {
+                        cucumber fileIncludePattern: '*.json', jsonReportDirectory: 'target/karate-reports', sortingMethod: 'ALPHABETICAL'
+                    }
+
+                    publishHTML (target: [
+                        allowMissing: false,
+                        alwaysLinkToLastBuild: false,
+                        keepAll: true,
+                        reportDir: reportDirPath,
+                        reportFiles: reportFileName,
+                        reportName: reportTitle
+                    ])
+                }
+            }
+        }
+    }
+}

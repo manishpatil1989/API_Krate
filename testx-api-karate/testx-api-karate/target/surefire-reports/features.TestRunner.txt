@@ -1,0 +1,36 @@
+-------------------------------------------------------------------------------
+Test set: features.TestRunner
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 4.347 s <<< FAILURE! - in features.TestRunner
+testParallel(features.TestRunner)  Time elapsed: 4.296 s  <<< FAILURE!
+java.lang.AssertionError: 
+status code was: 503, expected: 200, response time in milliseconds: 272, url: https://api.graphql.jobs/, response: 
+<!DOCTYPE html>
+	<html>
+	  <head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="utf-8">
+		<title>Application Error</title>
+		<style media="screen">
+		  html,body,iframe {
+			margin: 0;
+			padding: 0;
+		  }
+		  html,body {
+			height: 100%;
+			overflow: hidden;
+		  }
+		  iframe {
+			width: 100%;
+			height: 100%;
+			border: 0;
+		  }
+		</style>
+	  </head>
+	  <body>
+		<iframe src="//www.herokucdn.com/error-pages/application-error.html"></iframe>
+	  </body>
+	</html>
+classpath:features/Karate_Examples.feature:98
+	at features.TestRunner.testParallel(TestRunner.java:20)
+

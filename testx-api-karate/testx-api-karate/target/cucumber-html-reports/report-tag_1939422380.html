@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script>
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<title>Cucumber Reports  - Tag: @name=nft-gatling</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+        <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation" ><a href="overview-steps.html">Steps</a></li>
+        <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>Karate-API-Automation-Report</td>
+      <td>05 Dec 2022, 12:21</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+  </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Tag Report</h2>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table class="stats-table">
+
+
+<thead>
+  <tr class="header dont-sort">
+      <th></th>
+    <th colspan="6">Steps</th>
+    <th colspan="3">Scenarios</th>
+    <th colspan="2">Features</th>
+  </tr>
+  <tr>
+    <th>Tag</th>
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="skipped">Skipped</th>
+    <th class="pending">Pending</th>
+    <th class="undefined">Undefined</th>
+    <th class="total">Total</th>
+
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="total">Total</th>
+
+    <th>Duration</th>
+    <th>Status</th>
+  </tr>
+</thead>
+
+
+        <tbody>
+        <tr>
+          <td class="tagname">@name=nft-gatling</td>
+          <td      class="passed"    >12</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td class="total">12</td>
+
+          <td  class="passed"    >1</td>
+          <td >0</td>
+          <td class="total">1</td>
+
+          <td class="duration" data-value="688916534">0.688</td>
+          <td class="passed">Passed</td>
+        </tr>
+        </tbody>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="elements">
+
+
+<div class="element">
+    <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_1585256551.html">features/Karate_Examples.feature</a>
+    </div>
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_4089311534.html">@smoke</a>
+       <a href="report-tag_1939422380.html">@name=nft-gatling</a>
+</div>
+
+
+  <span class="lead-duration duration">0.688</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">&quot;PostCode-API&quot; - &quot;Get PostCode Details&quot; Validation &amp; Performance Testing using Gatling</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-1" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-2" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def baseUrl = td_api.baseUrl</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def endPoint = td_common.postCode</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def requestBody = td_api.postcode_bulklookup_request_body</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def expResponse = td_api.postcode_bulklookup_response_body</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url baseUrl</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">path endPoint</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request requestBody</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method POST</span>
+
+  <span class="lead-duration duration">0.677</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-3">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-3" class="collapse collapsable-details">
+        <pre>12:21:20.661 request:
+1 &gt; POST https://postcodes.io/postcodes
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 47
+1 &gt; Host: postcodes.io
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_321)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;postcodes&quot;:[&quot;OX49 5NU&quot;,&quot;M32 0JG&quot;,&quot;NE30 1DP&quot;]}
+
+12:21:20.933 response time in milliseconds: 271
+1 &lt; 200
+1 &lt; Date: Mon, 05 Dec 2022 12:21:20 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; x-gnu: Michael J Blanchard
+1 &lt; access-control-allow-origin: *
+1 &lt; etag: W/&quot;a6a-xWlZlsQw6RGHnc59nkO4NICqmnI&quot;
+1 &lt; CF-Cache-Status: DYNAMIC
+1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=Ym8z6Ts1VngfbqfFjAQ5yaxYUGd7YjZp2xuMTKfkdqQFTup7VOE46eQt%2B7blKN2qjNPvLlfJfzKLb1XfDaTfWguUB4zDtCAnZpYqsTSn%2FqhQTyevO9KSW4cI0wRkMg%3D%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; Server: cloudflare
+1 &lt; CF-RAY: 774cbdb5df2f23f6-LHR
+{&quot;status&quot;:200,&quot;result&quot;:[{&quot;query&quot;:&quot;OX49 5NU&quot;,&quot;result&quot;:{&quot;postcode&quot;:&quot;OX49 5NU&quot;,&quot;quality&quot;:1,&quot;eastings&quot;:464438,&quot;northings&quot;:195677,&quot;country&quot;:&quot;England&quot;,&quot;nhs_ha&quot;:&quot;South Central&quot;,&quot;longitude&quot;:-1.069752,&quot;latitude&quot;:51.655929,&quot;european_electoral_region&quot;:&quot;South East&quot;,&quot;primary_care_trust&quot;:&quot;Oxfordshire&quot;,&quot;region&quot;:&quot;South East&quot;,&quot;lsoa&quot;:&quot;South Oxfordshire 011B&quot;,&quot;msoa&quot;:&quot;South Oxfordshire 011&quot;,&quot;incode&quot;:&quot;5NU&quot;,&quot;outcode&quot;:&quot;OX49&quot;,&quot;parliamentary_constituency&quot;:&quot;Henley&quot;,&quot;admin_district&quot;:&quot;South Oxfordshire&quot;,&quot;parish&quot;:&quot;Brightwell Baldwin&quot;,&quot;admin_county&quot;:&quot;Oxfordshire&quot;,&quot;admin_ward&quot;:&quot;Chalgrove&quot;,&quot;ced&quot;:&quot;Chalgrove and Watlington&quot;,&quot;ccg&quot;:&quot;NHS Oxfordshire&quot;,&quot;nuts&quot;:&quot;Oxfordshire CC&quot;,&quot;codes&quot;:{&quot;admin_district&quot;:&quot;E07000179&quot;,&quot;admin_county&quot;:&quot;E10000025&quot;,&quot;admin_ward&quot;:&quot;E05009735&quot;,&quot;parish&quot;:&quot;E04008109&quot;,&quot;parliamentary_constituency&quot;:&quot;E14000742&quot;,&quot;ccg&quot;:&quot;E38000136&quot;,&quot;ccg_id&quot;:&quot;10Q&quot;,&quot;ced&quot;:&quot;E58001732&quot;,&quot;nuts&quot;:&quot;TLJ14&quot;,&quot;lsoa&quot;:&quot;E01028601&quot;,&quot;msoa&quot;:&quot;E02005968&quot;,&quot;lau2&quot;:&quot;E07000179&quot;}}},{&quot;query&quot;:&quot;M32 0JG&quot;,&quot;result&quot;:{&quot;postcode&quot;:&quot;M32 0JG&quot;,&quot;quality&quot;:1,&quot;eastings&quot;:379988,&quot;northings&quot;:395476,&quot;country&quot;:&quot;England&quot;,&quot;nhs_ha&quot;:&quot;North West&quot;,&quot;longitude&quot;:-2.302836,&quot;latitude&quot;:53.455654,&quot;european_electoral_region&quot;:&quot;North West&quot;,&quot;primary_care_trust&quot;:&quot;Trafford&quot;,&quot;region&quot;:&quot;North West&quot;,&quot;lsoa&quot;:&quot;Trafford 003C&quot;,&quot;msoa&quot;:&quot;Trafford 003&quot;,&quot;incode&quot;:&quot;0JG&quot;,&quot;outcode&quot;:&quot;M32&quot;,&quot;parliamentary_constituency&quot;:&quot;Stretford and Urmston&quot;,&quot;admin_district&quot;:&quot;Trafford&quot;,&quot;parish&quot;:&quot;Trafford, unparished area&quot;,&quot;admin_county&quot;:null,&quot;admin_ward&quot;:&quot;Gorse Hill&quot;,&quot;ced&quot;:null,&quot;ccg&quot;:&quot;NHS Trafford&quot;,&quot;nuts&quot;:&quot;Greater Manchester South West&quot;,&quot;codes&quot;:{&quot;admin_district&quot;:&quot;E08000009&quot;,&quot;admin_county&quot;:&quot;E99999999&quot;,&quot;admin_ward&quot;:&quot;E05000829&quot;,&quot;parish&quot;:&quot;E43000163&quot;,&quot;parliamentary_constituency&quot;:&quot;E14000979&quot;,&quot;ccg&quot;:&quot;E38000187&quot;,&quot;ccg_id&quot;:&quot;02A&quot;,&quot;ced&quot;:&quot;E99999999&quot;,&quot;nuts&quot;:&quot;TLD34&quot;,&quot;lsoa&quot;:&quot;E01006187&quot;,&quot;msoa&quot;:&quot;E02001261&quot;,&quot;lau2&quot;:&quot;E08000009&quot;}}},{&quot;query&quot;:&quot;NE30 1DP&quot;,&quot;result&quot;:{&quot;postcode&quot;:&quot;NE30 1DP&quot;,&quot;quality&quot;:1,&quot;eastings&quot;:435958,&quot;northings&quot;:568671,&quot;country&quot;:&quot;England&quot;,&quot;nhs_ha&quot;:&quot;North East&quot;,&quot;longitude&quot;:-1.439269,&quot;latitude&quot;:55.011303,&quot;european_electoral_region&quot;:&quot;North East&quot;,&quot;primary_care_trust&quot;:&quot;North Tyneside&quot;,&quot;region&quot;:&quot;North East&quot;,&quot;lsoa&quot;:&quot;North Tyneside 016C&quot;,&quot;msoa&quot;:&quot;North Tyneside 016&quot;,&quot;incode&quot;:&quot;1DP&quot;,&quot;outcode&quot;:&quot;NE30&quot;,&quot;parliamentary_constituency&quot;:&quot;Tynemouth&quot;,&quot;admin_district&quot;:&quot;North Tyneside&quot;,&quot;parish&quot;:&quot;North Tyneside, unparished area&quot;,&quot;admin_county&quot;:null,&quot;admin_ward&quot;:&quot;Tynemouth&quot;,&quot;ced&quot;:null,&quot;ccg&quot;:&quot;NHS North Tyneside&quot;,&quot;nuts&quot;:&quot;Tyneside&quot;,&quot;codes&quot;:{&quot;admin_district&quot;:&quot;E08000022&quot;,&quot;admin_county&quot;:&quot;E99999999&quot;,&quot;admin_ward&quot;:&quot;E05001130&quot;,&quot;parish&quot;:&quot;E43000176&quot;,&quot;parliamentary_constituency&quot;:&quot;E14001006&quot;,&quot;ccg&quot;:&quot;E38000127&quot;,&quot;ccg_id&quot;:&quot;99C&quot;,&quot;ced&quot;:&quot;E99999999&quot;,&quot;nuts&quot;:&quot;TLC22&quot;,&quot;lsoa&quot;:&quot;E01008561&quot;,&quot;msoa&quot;:&quot;E02001753&quot;,&quot;lau2&quot;:&quot;E08000022&quot;}}}]}
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">header karate-name =  'PostCode-API'</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">def actResponse = response</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">match actResponse == expResponse</span>
+
+  <span class="lead-duration duration">0.003</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+<br/>
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

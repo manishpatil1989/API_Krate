@@ -1,0 +1,32 @@
+{
+  "postCode": "/postcodes",
+  "validate": "/validate",
+  "autoComplete": "/autocomplete",
+  "outCodes": "/outcodes/",
+  "listUsers": "/users?page=2",
+  "randomPostCode": "/random/postcodes",
+  "nearest": "/nearest",
+  "singleUser": "/users/2",
+  "registerUser": "/register",
+
+  "postCodeVal": "EC1M 5RR",
+  "outCode": "EC1M",
+
+  "sampleAPIUrl": "https://reqres.in",
+  "contextPath": "/api",
+  "graphQLUrl": "https://api.graphql.jobs/",
+
+  "nopostcode_response_body": {
+    "status": 400,
+    "error": "No postcode query submitted. Remember to include query parameter"
+  },
+  "invalid_srcchannel_response_body": {
+    "httpCode": "400",
+    "httpMessage": "Bad Request",
+    "moreInformation": "Source Channel Header is either not present or invalid"
+  },
+  "register_api_params": {
+    "email": "eve.holt@reqres.in",
+    "password": "pistol"
+  }
+}

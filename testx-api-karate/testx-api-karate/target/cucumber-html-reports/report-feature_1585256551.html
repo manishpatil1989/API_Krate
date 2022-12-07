@@ -1,0 +1,3155 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script>
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<title>Cucumber Reports  - Feature: features/Karate_Examples.feature</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+        <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation" ><a href="overview-steps.html">Steps</a></li>
+        <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>Karate-API-Automation-Report</td>
+      <td>05 Dec 2022, 12:21</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+  </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Feature Report</h2>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table class="stats-table">
+
+
+<thead>
+  <tr class="header dont-sort">
+      <th></th>
+    <th colspan="6">Steps</th>
+    <th colspan="3">Scenarios</th>
+    <th colspan="2">Features</th>
+  </tr>
+  <tr>
+    <th>Feature</th>
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="skipped">Skipped</th>
+    <th class="pending">Pending</th>
+    <th class="undefined">Undefined</th>
+    <th class="total">Total</th>
+
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="total">Total</th>
+
+    <th>Duration</th>
+    <th>Status</th>
+  </tr>
+</thead>
+
+
+        <tbody>
+        <tr>
+          <td class="tagname">features/Karate_Examples.feature</td>
+          <td      class="passed"    >72</td>
+          <td      class="failed"    >1</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td class="total">73</td>
+
+          <td  class="passed"    >4</td>
+          <td  class="failed"    >1</td>
+          <td class="total">5</td>
+
+          <td class="duration" data-value="4955822084">4.955</td>
+          <td class="failed">Failed</td>
+        </tr>
+        </tbody>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="feature">
+
+<div class="tags indention">
+</div>
+
+
+<div class="brief failed">
+  <span class="keyword indention">Feature</span>
+  <span class="name">features/Karate_Examples.feature</span>
+
+
+</div>
+
+        <div class="description indention">Validate Sample API functionality
+API Name: PostCode-API</div>
+
+        <div class="elements inner-level">
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.041</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-1" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-2" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def td_api = read(`../testData/${env}/td_postcode_api.json`)</span>
+
+  <span class="lead-duration duration">0.040</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def td_common = read('../testData/common/td_common.json')</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_4089311534.html">@smoke</a>
+       <a href="report-tag_1939422380.html">@name=nft-gatling</a>
+</div>
+
+
+  <span class="lead-duration duration">0.688</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-3">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">&quot;PostCode-API&quot; - &quot;Get PostCode Details&quot; Validation &amp; Performance Testing using Gatling</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-3" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-4">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-4" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def baseUrl = td_api.baseUrl</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def endPoint = td_common.postCode</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def requestBody = td_api.postcode_bulklookup_request_body</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def expResponse = td_api.postcode_bulklookup_response_body</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url baseUrl</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">path endPoint</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request requestBody</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method POST</span>
+
+  <span class="lead-duration duration">0.677</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-5">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-5" class="collapse collapsable-details">
+        <pre>12:21:20.661 request:
+1 &gt; POST https://postcodes.io/postcodes
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 47
+1 &gt; Host: postcodes.io
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_321)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;postcodes&quot;:[&quot;OX49 5NU&quot;,&quot;M32 0JG&quot;,&quot;NE30 1DP&quot;]}
+
+12:21:20.933 response time in milliseconds: 271
+1 &lt; 200
+1 &lt; Date: Mon, 05 Dec 2022 12:21:20 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; x-gnu: Michael J Blanchard
+1 &lt; access-control-allow-origin: *
+1 &lt; etag: W/&quot;a6a-xWlZlsQw6RGHnc59nkO4NICqmnI&quot;
+1 &lt; CF-Cache-Status: DYNAMIC
+1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=Ym8z6Ts1VngfbqfFjAQ5yaxYUGd7YjZp2xuMTKfkdqQFTup7VOE46eQt%2B7blKN2qjNPvLlfJfzKLb1XfDaTfWguUB4zDtCAnZpYqsTSn%2FqhQTyevO9KSW4cI0wRkMg%3D%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; Server: cloudflare
+1 &lt; CF-RAY: 774cbdb5df2f23f6-LHR
+{&quot;status&quot;:200,&quot;result&quot;:[{&quot;query&quot;:&quot;OX49 5NU&quot;,&quot;result&quot;:{&quot;postcode&quot;:&quot;OX49 5NU&quot;,&quot;quality&quot;:1,&quot;eastings&quot;:464438,&quot;northings&quot;:195677,&quot;country&quot;:&quot;England&quot;,&quot;nhs_ha&quot;:&quot;South Central&quot;,&quot;longitude&quot;:-1.069752,&quot;latitude&quot;:51.655929,&quot;european_electoral_region&quot;:&quot;South East&quot;,&quot;primary_care_trust&quot;:&quot;Oxfordshire&quot;,&quot;region&quot;:&quot;South East&quot;,&quot;lsoa&quot;:&quot;South Oxfordshire 011B&quot;,&quot;msoa&quot;:&quot;South Oxfordshire 011&quot;,&quot;incode&quot;:&quot;5NU&quot;,&quot;outcode&quot;:&quot;OX49&quot;,&quot;parliamentary_constituency&quot;:&quot;Henley&quot;,&quot;admin_district&quot;:&quot;South Oxfordshire&quot;,&quot;parish&quot;:&quot;Brightwell Baldwin&quot;,&quot;admin_county&quot;:&quot;Oxfordshire&quot;,&quot;admin_ward&quot;:&quot;Chalgrove&quot;,&quot;ced&quot;:&quot;Chalgrove and Watlington&quot;,&quot;ccg&quot;:&quot;NHS Oxfordshire&quot;,&quot;nuts&quot;:&quot;Oxfordshire CC&quot;,&quot;codes&quot;:{&quot;admin_district&quot;:&quot;E07000179&quot;,&quot;admin_county&quot;:&quot;E10000025&quot;,&quot;admin_ward&quot;:&quot;E05009735&quot;,&quot;parish&quot;:&quot;E04008109&quot;,&quot;parliamentary_constituency&quot;:&quot;E14000742&quot;,&quot;ccg&quot;:&quot;E38000136&quot;,&quot;ccg_id&quot;:&quot;10Q&quot;,&quot;ced&quot;:&quot;E58001732&quot;,&quot;nuts&quot;:&quot;TLJ14&quot;,&quot;lsoa&quot;:&quot;E01028601&quot;,&quot;msoa&quot;:&quot;E02005968&quot;,&quot;lau2&quot;:&quot;E07000179&quot;}}},{&quot;query&quot;:&quot;M32 0JG&quot;,&quot;result&quot;:{&quot;postcode&quot;:&quot;M32 0JG&quot;,&quot;quality&quot;:1,&quot;eastings&quot;:379988,&quot;northings&quot;:395476,&quot;country&quot;:&quot;England&quot;,&quot;nhs_ha&quot;:&quot;North West&quot;,&quot;longitude&quot;:-2.302836,&quot;latitude&quot;:53.455654,&quot;european_electoral_region&quot;:&quot;North West&quot;,&quot;primary_care_trust&quot;:&quot;Trafford&quot;,&quot;region&quot;:&quot;North West&quot;,&quot;lsoa&quot;:&quot;Trafford 003C&quot;,&quot;msoa&quot;:&quot;Trafford 003&quot;,&quot;incode&quot;:&quot;0JG&quot;,&quot;outcode&quot;:&quot;M32&quot;,&quot;parliamentary_constituency&quot;:&quot;Stretford and Urmston&quot;,&quot;admin_district&quot;:&quot;Trafford&quot;,&quot;parish&quot;:&quot;Trafford, unparished area&quot;,&quot;admin_county&quot;:null,&quot;admin_ward&quot;:&quot;Gorse Hill&quot;,&quot;ced&quot;:null,&quot;ccg&quot;:&quot;NHS Trafford&quot;,&quot;nuts&quot;:&quot;Greater Manchester South West&quot;,&quot;codes&quot;:{&quot;admin_district&quot;:&quot;E08000009&quot;,&quot;admin_county&quot;:&quot;E99999999&quot;,&quot;admin_ward&quot;:&quot;E05000829&quot;,&quot;parish&quot;:&quot;E43000163&quot;,&quot;parliamentary_constituency&quot;:&quot;E14000979&quot;,&quot;ccg&quot;:&quot;E38000187&quot;,&quot;ccg_id&quot;:&quot;02A&quot;,&quot;ced&quot;:&quot;E99999999&quot;,&quot;nuts&quot;:&quot;TLD34&quot;,&quot;lsoa&quot;:&quot;E01006187&quot;,&quot;msoa&quot;:&quot;E02001261&quot;,&quot;lau2&quot;:&quot;E08000009&quot;}}},{&quot;query&quot;:&quot;NE30 1DP&quot;,&quot;result&quot;:{&quot;postcode&quot;:&quot;NE30 1DP&quot;,&quot;quality&quot;:1,&quot;eastings&quot;:435958,&quot;northings&quot;:568671,&quot;country&quot;:&quot;England&quot;,&quot;nhs_ha&quot;:&quot;North East&quot;,&quot;longitude&quot;:-1.439269,&quot;latitude&quot;:55.011303,&quot;european_electoral_region&quot;:&quot;North East&quot;,&quot;primary_care_trust&quot;:&quot;North Tyneside&quot;,&quot;region&quot;:&quot;North East&quot;,&quot;lsoa&quot;:&quot;North Tyneside 016C&quot;,&quot;msoa&quot;:&quot;North Tyneside 016&quot;,&quot;incode&quot;:&quot;1DP&quot;,&quot;outcode&quot;:&quot;NE30&quot;,&quot;parliamentary_constituency&quot;:&quot;Tynemouth&quot;,&quot;admin_district&quot;:&quot;North Tyneside&quot;,&quot;parish&quot;:&quot;North Tyneside, unparished area&quot;,&quot;admin_county&quot;:null,&quot;admin_ward&quot;:&quot;Tynemouth&quot;,&quot;ced&quot;:null,&quot;ccg&quot;:&quot;NHS North Tyneside&quot;,&quot;nuts&quot;:&quot;Tyneside&quot;,&quot;codes&quot;:{&quot;admin_district&quot;:&quot;E08000022&quot;,&quot;admin_county&quot;:&quot;E99999999&quot;,&quot;admin_ward&quot;:&quot;E05001130&quot;,&quot;parish&quot;:&quot;E43000176&quot;,&quot;parliamentary_constituency&quot;:&quot;E14001006&quot;,&quot;ccg&quot;:&quot;E38000127&quot;,&quot;ccg_id&quot;:&quot;99C&quot;,&quot;ced&quot;:&quot;E99999999&quot;,&quot;nuts&quot;:&quot;TLC22&quot;,&quot;lsoa&quot;:&quot;E01008561&quot;,&quot;msoa&quot;:&quot;E02001753&quot;,&quot;lau2&quot;:&quot;E08000022&quot;}}}]}
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">header karate-name =  'PostCode-API'</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">def actResponse = response</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">match actResponse == expResponse</span>
+
+  <span class="lead-duration duration">0.003</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.041</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-6">
+
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-6" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-7">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-7" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def td_api = read(`../testData/${env}/td_postcode_api.json`)</span>
+
+  <span class="lead-duration duration">0.040</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def td_common = read('../testData/common/td_common.json')</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_4089311534.html">@smoke</a>
+</div>
+
+
+  <span class="lead-duration duration">0.673</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-8">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">&quot;PostCode-API&quot; - &quot;LookUp PostCode Details&quot; Validation &amp; Schema Validation</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-8" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-9">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-9" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def baseUrl = td_api.baseUrl</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def postCodeVal = td_common.outCode</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def endPoint = td_common.outCodes + postCodeVal</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def expResponse = td_api.postcode_lookupcode_response_body</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def expSchema = td_api.postcode_lookupdcode_schema</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url baseUrl</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">path endPoint</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method GET</span>
+
+  <span class="lead-duration duration">0.647</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-10">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-10" class="collapse collapsable-details">
+        <pre>12:21:20.661 request:
+1 &gt; GET https://postcodes.io/outcodes/EC1M
+1 &gt; Host: postcodes.io
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_321)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+12:21:20.903 response time in milliseconds: 241
+1 &lt; 200
+1 &lt; Date: Mon, 05 Dec 2022 12:21:20 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; x-gnu: Michael J Blanchard
+1 &lt; access-control-allow-origin: *
+1 &lt; etag: W/&quot;1b2-fWjnvEgKBiFAhq9r9J7qwzA1HDs&quot;
+1 &lt; CF-Cache-Status: HIT
+1 &lt; Age: 58
+1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=IVktAqMPJBaAPJMlrMfdJbcWEOaQ31w7UMlPA8IEhEHjERC7wUf6gRV8pu7%2Bpxjb87HzRNXWjJwRICO5s0zuMOvgHw8FwLgWETc%2BhRAAUj60S%2FEhRPhvQ%2FG6G%2Bmudg%3D%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; Vary: Accept-Encoding
+1 &lt; Server: cloudflare
+1 &lt; CF-RAY: 774cbdb5d8f0731a-LHR
+{&quot;status&quot;:200,&quot;result&quot;:{&quot;outcode&quot;:&quot;EC1M&quot;,&quot;longitude&quot;:-0.102288270718232,&quot;latitude&quot;:51.5213030552487,&quot;northings&quot;:181972,&quot;eastings&quot;:531759,&quot;admin_district&quot;:[&quot;Camden&quot;,&quot;Islington&quot;,&quot;City of London&quot;],&quot;parish&quot;:[&quot;Islington, unparished area&quot;,&quot;Camden, unparished area&quot;,&quot;City of London, unparished area&quot;],&quot;admin_county&quot;:[],&quot;admin_ward&quot;:[&quot;Farringdon Within&quot;,&quot;Bunhill&quot;,&quot;Clerkenwell&quot;,&quot;Cripplegate&quot;,&quot;Holborn &amp; Covent Garden&quot;],&quot;country&quot;:[&quot;England&quot;]}}
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">def actResponse = response</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">match actResponse == expResponse</span>
+
+  <span class="lead-duration duration">0.011</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">actResponse.status == expResponse.status</span>
+
+  <span class="lead-duration duration">0.006</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match actResponse == expSchema</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.041</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-11">
+
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-11" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-12">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-12" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def td_api = read(`../testData/${env}/td_postcode_api.json`)</span>
+
+  <span class="lead-duration duration">0.040</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def td_common = read('../testData/common/td_common.json')</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_4089311534.html">@smoke</a>
+</div>
+
+
+  <span class="lead-duration duration">1.340</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-13">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Validate &quot;PostCode-API&quot; - &quot;Bulk Reserve&quot; Using Java and JavaScript Custom Methods &amp; Common Scenario from Feature File</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-13" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-14">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-14" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def baseUrl = td_api.baseUrl</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def endPoint = td_common.postCode</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def requestBody = td_api.postcode_bulkreserve_request_body</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def expResponse = td_api.postcode_bulkreserve_response_body</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def javaUtils = Java.type('utility.JavaUtils')</span>
+
+  <span class="lead-duration duration">0.006</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def getUserNo = new javaUtils().getRandomNumber(50);</span>
+
+  <span class="lead-duration duration">0.009</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print 'getUserNo ---', getUserNo</span>
+
+  <span class="lead-duration duration">0.004</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-15">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-15" class="collapse collapsable-details">
+        <pre>12:21:20.276 [print] getUserNo --- 15 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def jsUtils = call read('../utility/JSUtils.js') 10</span>
+
+  <span class="lead-duration duration">0.013</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print 'JS getUserNo ---', jsUtils</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-16">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-16" class="collapse collapsable-details">
+        <pre>12:21:20.293 [print] JS getUserNo --- 7 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def config = { baseUrl: '#(baseUrl)', endPoint: '#(endPoint)', requestBody: '#(requestBody)' }</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def actResponse = call read('classpath:common/Karate_Common.feature@bulkReserve') config</span>
+
+  <span class="lead-duration duration">0.652</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name- passed">
+  <span class="keyword indention"></span>
+  <span class="name">common/Karate_Common.feature</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-17">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-17" class="collapse collapsable-details">
+        <pre>{
+  &quot;baseUrl&quot;: &quot;https://postcodes.io/&quot;,
+  &quot;endPoint&quot;: &quot;/postcodes&quot;,
+  &quot;requestBody&quot;: {
+    &quot;geolocations&quot;: [
+      {
+        &quot;longitude&quot;: 0.629834723775309,
+        &quot;latitude&quot;: 51.7923246977375
+      },
+      {
+        &quot;longitude&quot;: -2.49690382054704,
+        &quot;latitude&quot;: 53.5351312861402,
+        &quot;radius&quot;: 1000,
+        &quot;limit&quot;: 5
+      }
+    ]
+  }
+}
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Given passed">
+  <span class="keyword indention">&gt; Given</span>
+  <span class="name">url baseUrl</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">path endPoint</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">request requestBody</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; When passed">
+  <span class="keyword indention">&gt; When</span>
+  <span class="name">method POST</span>
+
+  <span class="lead-duration duration">0.634</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-18">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-18" class="collapse collapsable-details">
+        <pre>12:21:20.661 request:
+1 &gt; POST https://postcodes.io/postcodes
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 162
+1 &gt; Host: postcodes.io
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_321)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;geolocations&quot;:[{&quot;longitude&quot;:0.629834723775309,&quot;latitude&quot;:51.7923246977375},{&quot;longitude&quot;:-2.49690382054704,&quot;latitude&quot;:53.5351312861402,&quot;radius&quot;:1000,&quot;limit&quot;:5}]}
+
+12:21:20.945 response time in milliseconds: 283
+1 &lt; 200
+1 &lt; Date: Mon, 05 Dec 2022 12:21:20 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; x-gnu: Michael J Blanchard
+1 &lt; access-control-allow-origin: *
+1 &lt; etag: W/&quot;1ed1-M+oOS1taGXWrznDJJUSrKk1Gm5A&quot;
+1 &lt; CF-Cache-Status: DYNAMIC
+1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=i6ovCw4hg9kgzabrqkYR0cE%2FbtK3oHe%2FfJpa65lcyp%2FvCov4nwCPJ8JgQuO61Qerwvck2pJZ8dchDJRSXhwpK%2FO3VF%2BeFYKh6N9MJMtoidX37oOAgidsB5HMZXudvQ%3D%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; Server: cloudflare
+1 &lt; CF-RAY: 774cbdb5da547779-LHR
+{&quot;status&quot;:200,&quot;result&quot;:[{&quot;query&quot;:{&quot;longitude&quot;:0.629834723775309,&quot;latitude&quot;:51.7923246977375},&quot;result&quot;:[{&quot;postcode&quot;:&quot;CM8 1EF&quot;,&quot;quality&quot;:1,&quot;eastings&quot;:581459,&quot;northings&quot;:213679,&quot;country&quot;:&quot;England&quot;,&quot;nhs_ha&quot;:&quot;East of England&quot;,&quot;longitude&quot;:0.629806,&quot;latitude&quot;:51.792326,&quot;european_electoral_region&quot;:&quot;Eastern&quot;,&quot;primary_care_trust&quot;:&quot;Mid Essex&quot;,&quot;region&quot;:&quot;East of England&quot;,&quot;lsoa&quot;:&quot;Braintree 017F&quot;,&quot;msoa&quot;:&quot;Braintree 017&quot;,&quot;incode&quot;:&quot;1EF&quot;,&quot;outcode&quot;:&quot;CM8&quot;,&quot;parliamentary_constituency&quot;:&quot;Witham&quot;,&quot;admin_district&quot;:&quot;Braintree&quot;,&quot;parish&quot;:&quot;Witham&quot;,&quot;admin_county&quot;:&quot;Essex&quot;,&quot;admin_ward&quot;:&quot;Witham South&quot;,&quot;ced&quot;:&quot;Witham Southern&quot;,&quot;ccg&quot;:&quot;NHS Mid Essex&quot;,&quot;nuts&quot;:&quot;Essex Haven Gateway&quot;,&quot;codes&quot;:{&quot;admin_district&quot;:&quot;E07000067&quot;,&quot;admin_county&quot;:&quot;E10000012&quot;,&quot;admin_ward&quot;:&quot;E05010388&quot;,&quot;parish&quot;:&quot;E04012935&quot;,&quot;parliamentary_constituency&quot;:&quot;E14001045&quot;,&quot;ccg&quot;:&quot;E38000106&quot;,&quot;ccg_id&quot;:&quot;06Q&quot;,&quot;ced&quot;:&quot;E58000470&quot;,&quot;nuts&quot;:&quot;TLH34&quot;,&quot;lsoa&quot;:&quot;E01033460&quot;,&quot;msoa&quot;:&quot;E02004462&quot;,&quot;lau2&quot;:&quot;E07000067&quot;},&quot;distance&quot;:1.98709706},{&quot;postcode&quot;:&quot;CM8 1EU&quot;,&quot;quality&quot;:1,&quot;eastings&quot;:581508,&quot;northings&quot;:213652,&quot;country&quot;:&quot;England&quot;,&quot;nhs_ha&quot;:&quot;East of England&quot;,&quot;longitude&quot;:0.630501,&quot;latitude&quot;:51.792068,&quot;european_electoral_region&quot;:&quot;Eastern&quot;,&quot;primary_care_trust&quot;:&quot;Mid Essex&quot;,&quot;region&quot;:&quot;East of England&quot;,&quot;lsoa&quot;:&quot;Braintree 017F&quot;,&quot;msoa&quot;:&quot;Braintree 017&quot;,&quot;incode&quot;:&quot;1EU&quot;,&quot;outcode&quot;:&quot;CM8&quot;,&quot;parliamentary_constituency&quot;:&quot;Witham&quot;,&quot;admin_district&quot;:&quot;Braintree&quot;,&quot;parish&quot;:&quot;Witham&quot;,&quot;admin_county&quot;:&quot;Essex&quot;,&quot;admin_ward&quot;:&quot;Witham South&quot;,&quot;ced&quot;:&quot;Witham Southern&quot;,&quot;ccg&quot;:&quot;NHS Mid Essex&quot;,&quot;nuts&quot;:&quot;Essex Haven Gateway&quot;,&quot;codes&quot;:{&quot;admin_district&quot;:&quot;E07000067&quot;,&quot;admin_county&quot;:&quot;E10000012&quot;,&quot;admin_ward&quot;:&quot;E05010388&quot;,&quot;parish&quot;:&quot;E04012935&quot;,&quot;parliamentary_constituency&quot;:&quot;E14001045&quot;,&quot;ccg&quot;:&quot;E38000106&quot;,&quot;ccg_id&quot;:&quot;06Q&quot;,&quot;ced&quot;:&quot;E58000470&quot;,&quot;nuts&quot;:&quot;TLH34&quot;,&quot;lsoa&quot;:&quot;E01033460&quot;,&quot;msoa&quot;:&quot;E02004462&quot;,&quot;lau2&quot;:&quot;E07000067&quot;},&quot;distance&quot;:54.12009472},{&quot;postcode&quot;:&quot;CM8 1PH&quot;,&quot;quality&quot;:1,&quot;eastings&quot;:581421,&quot;northings&quot;:213740,&quot;country&quot;:&quot;England&quot;,&quot;nhs_ha&quot;:&quot;East of England&quot;,&quot;longitude&quot;:0.629287,&quot;latitude&quot;:51.792887,&quot;european_electoral_region&quot;:&quot;Eastern&quot;,&quot;primary_care_trust&quot;:&quot;Mid Essex&quot;,&quot;region&quot;:&quot;East of England&quot;,&quot;lsoa&quot;:&quot;Braintree 017H&quot;,&quot;msoa&quot;:&quot;Braintree 017&quot;,&quot;incode&quot;:&quot;1PH&quot;,&quot;outcode&quot;:&quot;CM8&quot;,&quot;parliamentary_constituency&quot;:&quot;Witham&quot;,&quot;admin_district&quot;:&quot;Braintree&quot;,&quot;parish&quot;:&quot;Witham&quot;,&quot;admin_county&quot;:&quot;Essex&quot;,&quot;admin_ward&quot;:&quot;Witham Central&quot;,&quot;ced&quot;:&quot;Witham Southern&quot;,&quot;ccg&quot;:&quot;NHS Mid Essex&quot;,&quot;nuts&quot;:&quot;Essex Haven Gateway&quot;,&quot;codes&quot;:{&quot;admin_district&quot;:&quot;E07000067&quot;,&quot;admin_county&quot;:&quot;E10000012&quot;,&quot;admin_ward&quot;:&quot;E05012966&quot;,&quot;parish&quot;:&quot;E04012935&quot;,&quot;parliamentary_constituency&quot;:&quot;E14001045&quot;,&quot;ccg&quot;:&quot;E38000106&quot;,&quot;ccg_id&quot;:&quot;06Q&quot;,&quot;ced&quot;:&quot;E58000470&quot;,&quot;nuts&quot;:&quot;TLH34&quot;,&quot;lsoa&quot;:&quot;E01033462&quot;,&quot;msoa&quot;:&quot;E02004462&quot;,&quot;lau2&quot;:&quot;E07000067&quot;},&quot;distance&quot;:73.09110168},{&quot;postcode&quot;:&quot;CM8 1PQ&quot;,&quot;quality&quot;:1,&quot;eastings&quot;:581399,&quot;northings&quot;:213755,&quot;country&quot;:&quot;England&quot;,&quot;nhs_ha&quot;:&quot;East of England&quot;,&quot;longitude&quot;:0.628977,&quot;latitude&quot;:51.793028,&quot;european_electoral_region&quot;:&quot;Eastern&quot;,&quot;primary_care_trust&quot;:&quot;Mid Essex&quot;,&quot;region&quot;:&quot;East of England&quot;,&quot;lsoa&quot;:&quot;Braintree 017H&quot;,&quot;msoa&quot;:&quot;Braintree 017&quot;,&quot;incode&quot;:&quot;1PQ&quot;,&quot;outcode&quot;:&quot;CM8&quot;,&quot;parliamentary_constituency&quot;:&quot;Witham&quot;,&quot;admin_district&quot;:&quot;Braintree&quot;,&quot;parish&quot;:&quot;Witham&quot;,&quot;admin_county&quot;:&quot;Essex&quot;,&quot;admin_ward&quot;:&quot;Witham Central&quot;,&quot;ced&quot;:&quot;Witham Southern&quot;,&quot;ccg&quot;:&quot;NHS Mid Essex&quot;,&quot;nuts&quot;:&quot;Essex Haven Gateway&quot;,&quot;codes&quot;:{&quot;admin_district&quot;:&quot;E07000067&quot;,&quot;admin_county&quot;:&quot;E10000012&quot;,&quot;admin_ward&quot;:&quot;E05012966&quot;,&quot;parish&quot;:&quot;E04012935&quot;,&quot;parliamentary_constituency&quot;:&quot;E14001045&quot;,&quot;ccg&quot;:&quot;E38000106&quot;,&quot;ccg_id&quot;:&quot;06Q&quot;,&quot;ced&quot;:&quot;E58000470&quot;,&quot;nuts&quot;:&quot;TLH34&quot;,&quot;lsoa&quot;:&quot;E01033462&quot;,&quot;msoa&quot;:&quot;E02004462&quot;,&quot;lau2&quot;:&quot;E07000067&quot;},&quot;distance&quot;:98.10933201}]},{&quot;query&quot;:{&quot;longitude&quot;:-2.49690382054704,&quot;latitude&quot;:53.5351312861402,&quot;radius&quot;:1000,&quot;limit&quot;:5},&quot;result&quot;:[{&quot;postcode&quot;:&quot;M46 9WU&quot;,&quot;quality&quot;:1,&quot;eastings&quot;:367163,&quot;northings&quot;:404390,&quot;country&quot;:&quot;England&quot;,&quot;nhs_ha&quot;:&quot;North West&quot;,&quot;longitude&quot;:-2.496903,&quot;latitude&quot;:53.535127,&quot;european_electoral_region&quot;:&quot;North West&quot;,&quot;primary_care_trust&quot;:&quot;Ashton, Leigh and Wigan&quot;,&quot;region&quot;:&quot;North West&quot;,&quot;lsoa&quot;:&quot;Wigan 017C&quot;,&quot;msoa&quot;:&quot;Wigan 017&quot;,&quot;incode&quot;:&quot;9WU&quot;,&quot;outcode&quot;:&quot;M46&quot;,&quot;parliamentary_constituency&quot;:&quot;Bolton West&quot;,&quot;admin_district&quot;:&quot;Wigan&quot;,&quot;parish&quot;:&quot;Wigan, unparished area&quot;,&quot;admin_county&quot;:null,&quot;admin_ward&quot;:&quot;Atherton&quot;,&quot;ced&quot;:null,&quot;ccg&quot;:&quot;NHS Wigan Borough&quot;,&quot;nuts&quot;:&quot;Greater Manchester North West&quot;,&quot;codes&quot;:{&quot;admin_district&quot;:&quot;E08000010&quot;,&quot;admin_county&quot;:&quot;E99999999&quot;,&quot;admin_ward&quot;:&quot;E05000845&quot;,&quot;parish&quot;:&quot;E43000164&quot;,&quot;parliamentary_constituency&quot;:&quot;E14000580&quot;,&quot;ccg&quot;:&quot;E38000205&quot;,&quot;ccg_id&quot;:&quot;02H&quot;,&quot;ced&quot;:&quot;E99999999&quot;,&quot;nuts&quot;:&quot;TLD36&quot;,&quot;lsoa&quot;:&quot;E01006241&quot;,&quot;msoa&quot;:&quot;E02001303&quot;,&quot;lau2&quot;:&quot;E08000010&quot;},&quot;distance&quot;:0.4801241},{&quot;postcode&quot;:&quot;M46 9XF&quot;,&quot;quality&quot;:1,&quot;eastings&quot;:367155,&quot;northings&quot;:404364,&quot;country&quot;:&quot;England&quot;,&quot;nhs_ha&quot;:&quot;North West&quot;,&quot;longitude&quot;:-2.497021,&quot;latitude&quot;:53.534893,&quot;european_electoral_region&quot;:&quot;North West&quot;,&quot;primary_care_trust&quot;:&quot;Ashton, Leigh and Wigan&quot;,&quot;region&quot;:&quot;North West&quot;,&quot;lsoa&quot;:&quot;Wigan 017B&quot;,&quot;msoa&quot;:&quot;Wigan 017&quot;,&quot;incode&quot;:&quot;9XF&quot;,&quot;outcode&quot;:&quot;M46&quot;,&quot;parliamentary_constituency&quot;:&quot;Bolton West&quot;,&quot;admin_district&quot;:&quot;Wigan&quot;,&quot;parish&quot;:&quot;Wigan, unparished area&quot;,&quot;admin_county&quot;:null,&quot;admin_ward&quot;:&quot;Atherton&quot;,&quot;ced&quot;:null,&quot;ccg&quot;:&quot;NHS Wigan Borough&quot;,&quot;nuts&quot;:&quot;Greater Manchester North West&quot;,&quot;codes&quot;:{&quot;admin_district&quot;:&quot;E08000010&quot;,&quot;admin_county&quot;:&quot;E99999999&quot;,&quot;admin_ward&quot;:&quot;E05000845&quot;,&quot;parish&quot;:&quot;E43000164&quot;,&quot;parliamentary_constituency&quot;:&quot;E14000580&quot;,&quot;ccg&quot;:&quot;E38000205&quot;,&quot;ccg_id&quot;:&quot;02H&quot;,&quot;ced&quot;:&quot;E99999999&quot;,&quot;nuts&quot;:&quot;TLD36&quot;,&quot;lsoa&quot;:&quot;E01006240&quot;,&quot;msoa&quot;:&quot;E02001303&quot;,&quot;lau2&quot;:&quot;E08000010&quot;},&quot;distance&quot;:27.6350374},{&quot;postcode&quot;:&quot;M46 9XE&quot;,&quot;quality&quot;:1,&quot;eastings&quot;:367212,&quot;northings&quot;:404330,&quot;country&quot;:&quot;England&quot;,&quot;nhs_ha&quot;:&quot;North West&quot;,&quot;longitude&quot;:-2.496158,&quot;latitude&quot;:53.534608,&quot;european_electoral_region&quot;:&quot;North West&quot;,&quot;primary_care_trust&quot;:&quot;Ashton, Leigh and Wigan&quot;,&quot;region&quot;:&quot;North West&quot;,&quot;lsoa&quot;:&quot;Wigan 017C&quot;,&quot;msoa&quot;:&quot;Wigan 017&quot;,&quot;incode&quot;:&quot;9XE&quot;,&quot;outcode&quot;:&quot;M46&quot;,&quot;parliamentary_constituency&quot;:&quot;Bolton West&quot;,&quot;admin_district&quot;:&quot;Wigan&quot;,&quot;parish&quot;:&quot;Wigan, unparished area&quot;,&quot;admin_county&quot;:null,&quot;admin_ward&quot;:&quot;Atherton&quot;,&quot;ced&quot;:null,&quot;ccg&quot;:&quot;NHS Wigan Borough&quot;,&quot;nuts&quot;:&quot;Greater Manchester North West&quot;,&quot;codes&quot;:{&quot;admin_district&quot;:&quot;E08000010&quot;,&quot;admin_county&quot;:&quot;E99999999&quot;,&quot;admin_ward&quot;:&quot;E05000845&quot;,&quot;parish&quot;:&quot;E43000164&quot;,&quot;parliamentary_constituency&quot;:&quot;E14000580&quot;,&quot;ccg&quot;:&quot;E38000205&quot;,&quot;ccg_id&quot;:&quot;02H&quot;,&quot;ced&quot;:&quot;E99999999&quot;,&quot;nuts&quot;:&quot;TLD36&quot;,&quot;lsoa&quot;:&quot;E01006241&quot;,&quot;msoa&quot;:&quot;E02001303&quot;,&quot;lau2&quot;:&quot;E08000010&quot;},&quot;distance&quot;:76.40229254},{&quot;postcode&quot;:&quot;M46 9NX&quot;,&quot;quality&quot;:1,&quot;eastings&quot;:367245,&quot;northings&quot;:404384,&quot;country&quot;:&quot;England&quot;,&quot;nhs_ha&quot;:&quot;North West&quot;,&quot;longitude&quot;:-2.495666,&quot;latitude&quot;:53.535078,&quot;european_electoral_region&quot;:&quot;North West&quot;,&quot;primary_care_trust&quot;:&quot;Ashton, Leigh and Wigan&quot;,&quot;region&quot;:&quot;North West&quot;,&quot;lsoa&quot;:&quot;Wigan 017C&quot;,&quot;msoa&quot;:&quot;Wigan 017&quot;,&quot;incode&quot;:&quot;9NX&quot;,&quot;outcode&quot;:&quot;M46&quot;,&quot;parliamentary_constituency&quot;:&quot;Bolton West&quot;,&quot;admin_district&quot;:&quot;Wigan&quot;,&quot;parish&quot;:&quot;Wigan, unparished area&quot;,&quot;admin_county&quot;:null,&quot;admin_ward&quot;:&quot;Atherton&quot;,&quot;ced&quot;:null,&quot;ccg&quot;:&quot;NHS Wigan Borough&quot;,&quot;nuts&quot;:&quot;Greater Manchester North West&quot;,&quot;codes&quot;:{&quot;admin_district&quot;:&quot;E08000010&quot;,&quot;admin_county&quot;:&quot;E99999999&quot;,&quot;admin_ward&quot;:&quot;E05000845&quot;,&quot;parish&quot;:&quot;E43000164&quot;,&quot;parliamentary_constituency&quot;:&quot;E14000580&quot;,&quot;ccg&quot;:&quot;E38000205&quot;,&quot;ccg_id&quot;:&quot;02H&quot;,&quot;ced&quot;:&quot;E99999999&quot;,&quot;nuts&quot;:&quot;TLD36&quot;,&quot;lsoa&quot;:&quot;E01006241&quot;,&quot;msoa&quot;:&quot;E02001303&quot;,&quot;lau2&quot;:&quot;E08000010&quot;},&quot;distance&quot;:82.28672453},{&quot;postcode&quot;:&quot;M46 9NU&quot;,&quot;quality&quot;:1,&quot;eastings&quot;:367171,&quot;northings&quot;:404476,&quot;country&quot;:&quot;England&quot;,&quot;nhs_ha&quot;:&quot;North West&quot;,&quot;longitude&quot;:-2.496792,&quot;latitude&quot;:53.535901,&quot;european_electoral_region&quot;:&quot;North West&quot;,&quot;primary_care_trust&quot;:&quot;Ashton, Leigh and Wigan&quot;,&quot;region&quot;:&quot;North West&quot;,&quot;lsoa&quot;:&quot;Wigan 017C&quot;,&quot;msoa&quot;:&quot;Wigan 017&quot;,&quot;incode&quot;:&quot;9NU&quot;,&quot;outcode&quot;:&quot;M46&quot;,&quot;parliamentary_constituency&quot;:&quot;Bolton West&quot;,&quot;admin_district&quot;:&quot;Wigan&quot;,&quot;parish&quot;:&quot;Wigan, unparished area&quot;,&quot;admin_county&quot;:null,&quot;admin_ward&quot;:&quot;Atherton&quot;,&quot;ced&quot;:null,&quot;ccg&quot;:&quot;NHS Wigan Borough&quot;,&quot;nuts&quot;:&quot;Greater Manchester North West&quot;,&quot;codes&quot;:{&quot;admin_district&quot;:&quot;E08000010&quot;,&quot;admin_county&quot;:&quot;E99999999&quot;,&quot;admin_ward&quot;:&quot;E05000845&quot;,&quot;parish&quot;:&quot;E43000164&quot;,&quot;parliamentary_constituency&quot;:&quot;E14000580&quot;,&quot;ccg&quot;:&quot;E38000205&quot;,&quot;ccg_id&quot;:&quot;02H&quot;,&quot;ced&quot;:&quot;E99999999&quot;,&quot;nuts&quot;:&quot;TLD36&quot;,&quot;lsoa&quot;:&quot;E01006241&quot;,&quot;msoa&quot;:&quot;E02001303&quot;,&quot;lau2&quot;:&quot;E08000010&quot;},&quot;distance&quot;:85.98655766}]}]}
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Then passed">
+  <span class="keyword indention">&gt; Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">match actResponse.response == expResponse</span>
+
+  <span class="lead-duration duration">0.006</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match actResponse.response.status == expResponse.status</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.041</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-19">
+
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-19" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-20">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-20" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def td_api = read(`../testData/${env}/td_postcode_api.json`)</span>
+
+  <span class="lead-duration duration">0.040</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def td_common = read('../testData/common/td_common.json')</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_4089311534.html">@smoke</a>
+</div>
+
+
+  <span class="lead-duration duration">1.357</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-21">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Using Form Fields &amp; Common Scenario from Feature File</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-21" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-22">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-22" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def baseUrl = td_common.sampleAPIUrl</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def contextPath = td_common.contextPath</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def endPoint = td_common.registerUser</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def params = td_common.register_api_params</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def config = { baseUrl: '#(baseUrl)', contextPath: '#(contextPath)', endPoint: '#(endPoint)', params: '#(params)' }</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def actResponse = call read('classpath:common/Karate_Common.feature@registerUser') config</span>
+
+  <span class="lead-duration duration">0.679</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name- passed">
+  <span class="keyword indention"></span>
+  <span class="name">common/Karate_Common.feature</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-23">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-23" class="collapse collapsable-details">
+        <pre>{
+  &quot;baseUrl&quot;: &quot;https://reqres.in&quot;,
+  &quot;contextPath&quot;: &quot;/api&quot;,
+  &quot;endPoint&quot;: &quot;/register&quot;,
+  &quot;params&quot;: {
+    &quot;email&quot;: &quot;eve.holt@reqres.in&quot;,
+    &quot;password&quot;: &quot;pistol&quot;
+  }
+}
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Given passed">
+  <span class="keyword indention">&gt; Given</span>
+  <span class="name">url baseUrl + contextPath</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">form fields params</span>
+
+  <span class="lead-duration duration">0.211</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">path endPoint</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; When passed">
+  <span class="keyword indention">&gt; When</span>
+  <span class="name">method POST</span>
+
+  <span class="lead-duration duration">0.450</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-24">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-24" class="collapse collapsable-details">
+        <pre>12:21:20.661 request:
+1 &gt; POST https://reqres.in/api/register
+1 &gt; Content-Type: application/x-www-form-urlencoded
+1 &gt; Content-Length: 42
+1 &gt; Host: reqres.in
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_321)
+1 &gt; Accept-Encoding: gzip,deflate
+email=eve.holt%40reqres.in&amp;password=pistol
+
+12:21:20.932 response time in milliseconds: 271
+1 &lt; 200
+1 &lt; Date: Mon, 05 Dec 2022 12:21:20 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 36
+1 &lt; Connection: keep-alive
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Etag: W/&quot;24-4iP0za1geN2he+ohu8F0FhCjLks&quot;
+1 &lt; Via: 1.1 vegur
+1 &lt; CF-Cache-Status: DYNAMIC
+1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=AX9ojsSrpXhJuAC2qCb%2BKcW85pPqJFfDkd02AReTcThLxaqrvQNHIxcJ5BoGhbGzl0H%2B0Ijy%2FXSrdtlFKXIOWWLm029%2Fl7wHAPjUK81XJ3WVNPFBuu%2Fw30Gniw%3D%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; Server: cloudflare
+1 &lt; CF-RAY: 774cbdb5d82d72f6-LHR
+{&quot;id&quot;:4,&quot;token&quot;:&quot;QpwL5tke4Pnpja7X4&quot;}
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Then passed">
+  <span class="keyword indention">&gt; Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print &quot;actResponse :: &quot;, actResponse</span>
+
+  <span class="lead-duration duration">0.008</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-25">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-25" class="collapse collapsable-details">
+        <pre>12:21:20.947 [print] actResponse ::  {
+  &quot;endPoint&quot;: &quot;/register&quot;,
+  &quot;baseUrl&quot;: &quot;https://reqres.in&quot;,
+  &quot;responseHeaders&quot;: {
+    &quot;Date&quot;: [
+      &quot;Mon, 05 Dec 2022 12:21:20 GMT&quot;
+    ],
+    &quot;Content-Type&quot;: [
+      &quot;application/json; charset=utf-8&quot;
+    ],
+    &quot;Content-Length&quot;: [
+      &quot;36&quot;
+    ],
+    &quot;Connection&quot;: [
+      &quot;keep-alive&quot;
+    ],
+    &quot;X-Powered-By&quot;: [
+      &quot;Express&quot;
+    ],
+    &quot;Access-Control-Allow-Origin&quot;: [
+      &quot;*&quot;
+    ],
+    &quot;Etag&quot;: [
+      &quot;W/\&quot;24-4iP0za1geN2he+ohu8F0FhCjLks\&quot;&quot;
+    ],
+    &quot;Via&quot;: [
+      &quot;1.1 vegur&quot;
+    ],
+    &quot;CF-Cache-Status&quot;: [
+      &quot;DYNAMIC&quot;
+    ],
+    &quot;Report-To&quot;: [
+      &quot;{\&quot;endpoints\&quot;:[{\&quot;url\&quot;:\&quot;https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=AX9ojsSrpXhJuAC2qCb%2BKcW85pPqJFfDkd02AReTcThLxaqrvQNHIxcJ5BoGhbGzl0H%2B0Ijy%2FXSrdtlFKXIOWWLm029%2Fl7wHAPjUK81XJ3WVNPFBuu%2Fw30Gniw%3D%3D\&quot;}],\&quot;group\&quot;:\&quot;cf-nel\&quot;,\&quot;max_age\&quot;:604800}&quot;
+    ],
+    &quot;NEL&quot;: [
+      &quot;{\&quot;success_fraction\&quot;:0,\&quot;report_to\&quot;:\&quot;cf-nel\&quot;,\&quot;max_age\&quot;:604800}&quot;
+    ],
+    &quot;Server&quot;: [
+      &quot;cloudflare&quot;
+    ],
+    &quot;CF-RAY&quot;: [
+      &quot;774cbdb5d82d72f6-LHR&quot;
+    ]
+  },
+  &quot;response&quot;: {
+    &quot;id&quot;: 4,
+    &quot;token&quot;: &quot;QpwL5tke4Pnpja7X4&quot;
+  },
+  &quot;contextPath&quot;: &quot;/api&quot;,
+  &quot;params&quot;: {
+    &quot;email&quot;: &quot;eve.holt@reqres.in&quot;,
+    &quot;password&quot;: &quot;pistol&quot;
+  },
+  &quot;responseStatus&quot;: 200
+}
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.041</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-26">
+
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-26" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-27">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-27" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def td_api = read(`../testData/${env}/td_postcode_api.json`)</span>
+
+  <span class="lead-duration duration">0.040</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def td_common = read('../testData/common/td_common.json')</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_4089311534.html">@smoke</a>
+</div>
+
+
+  <span class="lead-duration duration">0.687</span>
+
+
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-28">
+
+<div class="brief failed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Using GraphQL</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-28" class="collapse collapsable-details  in ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-29">
+
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-29" class="inner-level collapse collapsable-details  in ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def graphql = read('../testData/common/td_graphql_api.graphql')</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def graphQLUrl = td_common.graphQLUrl</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url graphQLUrl</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request { query: '#(graphql)' }</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method POST</span>
+
+  <span class="lead-duration duration">0.682</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-30">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-30" class="collapse collapsable-details">
+        <pre>12:21:20.661 request:
+1 &gt; POST https://api.graphql.jobs/
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 51
+1 &gt; Host: api.graphql.jobs
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_321)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;query&quot;:&quot;query {\n  jobs{\n    id, title\n  }\n}&quot;}
+
+12:21:20.934 response time in milliseconds: 272
+1 &lt; 503
+1 &lt; Date: Mon, 05 Dec 2022 12:21:20 GMT
+1 &lt; Content-Type: text/html; charset=utf-8
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Cache-Control: no-cache, no-store
+1 &lt; CF-Cache-Status: DYNAMIC
+1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=ag55rZsFbtMGGlp9ykKW9bKB6OKuHk1Z1L442zeZWDJuxc08zzTF2EmtEbtPZzUMu1%2BmxwRmlZtVkYD51hdrbc%2Filb5o0edevESDcVBWcE2b7wrP0JYWkSukAezTH8%2BgXSm0&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; Server: cloudflare
+1 &lt; CF-RAY: 774cbdb5d8198895-LHR
+1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400
+&lt;!DOCTYPE html&gt;
+	&lt;html&gt;
+	  &lt;head&gt;
+		&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+		&lt;meta charset=&quot;utf-8&quot;&gt;
+		&lt;title&gt;Application Error&lt;/title&gt;
+		&lt;style media=&quot;screen&quot;&gt;
+		  html,body,iframe {
+			margin: 0;
+			padding: 0;
+		  }
+		  html,body {
+			height: 100%;
+			overflow: hidden;
+		  }
+		  iframe {
+			width: 100%;
+			height: 100%;
+			border: 0;
+		  }
+		&lt;/style&gt;
+	  &lt;/head&gt;
+	  &lt;body&gt;
+		&lt;iframe src=&quot;//www.herokucdn.com/error-pages/application-error.html&quot;&gt;&lt;/iframe&gt;
+	  &lt;/body&gt;
+	&lt;/html&gt;
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then failed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-31">
+          <a>status</a>
+      </div>
+      <div id="msg-31" class="collapse collapsable-details  in ">
+        <pre>status code was: 503, expected: 200, response time in milliseconds: 272, url: https://api.graphql.jobs/, response: 
+&lt;!DOCTYPE html&gt;
+	&lt;html&gt;
+	  &lt;head&gt;
+		&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+		&lt;meta charset=&quot;utf-8&quot;&gt;
+		&lt;title&gt;Application Error&lt;/title&gt;
+		&lt;style media=&quot;screen&quot;&gt;
+		  html,body,iframe {
+			margin: 0;
+			padding: 0;
+		  }
+		  html,body {
+			height: 100%;
+			overflow: hidden;
+		  }
+		  iframe {
+			width: 100%;
+			height: 100%;
+			border: 0;
+		  }
+		&lt;/style&gt;
+	  &lt;/head&gt;
+	  &lt;body&gt;
+		&lt;iframe src=&quot;//www.herokucdn.com/error-pages/application-error.html&quot;&gt;&lt;/iframe&gt;
+	  &lt;/body&gt;
+	&lt;/html&gt;
+classpath:features/Karate_Examples.feature:98</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-32">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-32" class="collapse collapsable-details">
+        <pre>12:21:20.941 classpath:features/Karate_Examples.feature:98
+Then status 200
+status code was: 503, expected: 200, response time in milliseconds: 272, url: https://api.graphql.jobs/, response: 
+&lt;!DOCTYPE html&gt;
+	&lt;html&gt;
+	  &lt;head&gt;
+		&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+		&lt;meta charset=&quot;utf-8&quot;&gt;
+		&lt;title&gt;Application Error&lt;/title&gt;
+		&lt;style media=&quot;screen&quot;&gt;
+		  html,body,iframe {
+			margin: 0;
+			padding: 0;
+		  }
+		  html,body {
+			height: 100%;
+			overflow: hidden;
+		  }
+		  iframe {
+			width: 100%;
+			height: 100%;
+			border: 0;
+		  }
+		&lt;/style&gt;
+	  &lt;/head&gt;
+	  &lt;body&gt;
+		&lt;iframe src=&quot;//www.herokucdn.com/error-pages/application-error.html&quot;&gt;&lt;/iframe&gt;
+	  &lt;/body&gt;
+	&lt;/html&gt;
+classpath:features/Karate_Examples.feature:98
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+<br/>
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>
